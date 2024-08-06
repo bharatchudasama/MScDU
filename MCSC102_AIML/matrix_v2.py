@@ -13,7 +13,7 @@ def main():
         match choice:
             case 0 :
                 print("Thanks For Using My Program ")
-                print("\t\t\t--- Jishnu")
+                print("\t\t\t--- Jishnu\n")
                 exit(0)
             case 1 :
                 a = int(input("Enter Number of Rows : "))
@@ -93,6 +93,7 @@ def matrixTranspose(mat, a, b):
 # z = matrixAdd(x, y, 3, 4)
 # print(z)
 # print(inputMatrix(2, 3))
-main()
+if __name__ == "__main__":
+    main()
 
 
