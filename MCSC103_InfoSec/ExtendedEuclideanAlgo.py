@@ -19,6 +19,7 @@ def main():
     b = int(input("Enter Second Number : "))
     g, x, y = ExtendedGCD(a, b)
     print(f"GCD is {g}, x is {x}, y is {y}\nSuch that ax + by = GCD(a,b)")
+    print("Thank You, this code is brought to you by Jishnu (MSc Sem I)")
 
 if __name__ == "__main__":
     main()
