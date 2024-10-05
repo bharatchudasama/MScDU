@@ -1,3 +1,6 @@
+// This is an improvement of v1, done with DYNAMIC PROGRAMMING
+// Time Complexity O(n^2)
+
 #include <bits/stdc++.h>
 using namespace std;
 
