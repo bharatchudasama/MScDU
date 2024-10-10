@@ -17,7 +17,7 @@ int lcsub(string s1, string s2, int ind1, int ind2, vector<vector<int>>& dp){
         dp[ind1][ind2] = 1 + lcsub(s1, s2, ind1-1, ind2-1, dp);
     }
     else{
-        dp[ind1][ind2] = max( lcsub(s1, s2, ind1-1, ind2, dp), lcsub(s1, s2, ind1, ind2-1, dp) );
+        dp[ind1][ind2] = max( lcsub(s1, s2, ind1-1, ind2, dp), lcsub(s1, s2, ind1, ind2-1, dp), lcsub(s1, s2, ind1-1, ind2-1, dp) );
     }
     return dp[ind1][ind2];
 }
