@@ -19,7 +19,7 @@ int lcsub(string s1, string s2, int ind1, int ind2){
         return 1 + lcsub(s1, s2, ind1-1, ind2-1);
     }
     else{
-        return max( lcsub(s1, s2, ind1-1, ind2), lcsub(s1, s2, ind1, ind2-1) );
+        return max( lcsub(s1, s2, ind1-1, ind2), lcsub(s1, s2, ind1, ind2-1), lcsub(s1, s2, ind1-1, ind2-1) );
     }
 }
 int main()
