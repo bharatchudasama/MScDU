@@ -7,11 +7,15 @@ void solve()
 {
     // Take Input
     // -----
-    auto start = high_resolution_clock::now();
 
-    ans = yourFunction();  // Call the function you want
-    auto stop = high_resolution_clock::now();
-    cout << "Judgement of Chronos : " auto duration = duration_cast<microseconds>(stop - start) << endl;
+    auto start = std::chrono::steady_clock::now();
+    int ans = yourFunction();  // Call the function you want
+
+    auto end = std::chrono::steady_clock::now();
+
+    auto diff = end - start;
+    cout << "Judgement of Chronos : ";
+    std::cout << std::chrono::duration<double, std::nano>(diff).count() << " nano-second" << std::endl;
 }
 
 int main() {
